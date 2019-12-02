@@ -12,12 +12,15 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  position:absolute;
+  transition: all 500ms linear
 }
 
 .polaroid > img {
   display: block;
   width: 100%;
 }
+
 
 .polaroid > figcaption {
   color: #fff;
