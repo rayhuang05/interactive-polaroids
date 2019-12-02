@@ -12,8 +12,8 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-  position:absolute;
-  transition: all 500ms linear
+  position: absolute;
+  transition: all 500ms linear;
 }
 
 .polaroid > img {
@@ -24,10 +24,13 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150%);
 }
 
-body{
-  position:relative;
+body {
+  position: relative;
 }
 
 .polaroid:first-child {
@@ -37,6 +40,7 @@ body{
   z-index: 1;
   transform: rotate(-15deg);
 }
+
 .polaroid:nth-child(2) {
   position: absolute;
   left: 30%;
@@ -52,6 +56,7 @@ body{
   z-index: 2;
   transform: rotate(35deg);
 }
+
 .polaroid:hover {
   transform: rotate(0deg);
   z-index: 10;
