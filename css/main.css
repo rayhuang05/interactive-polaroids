@@ -21,8 +21,39 @@ html {
   width: 100%;
 }
 
-
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+}
+
+body{
+  position:relative;
+}
+
+.polaroid:first-child {
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  z-index: 1;
+  transform: rotate(-15deg);
+}
+.polaroid:nth-child(2) {
+  position: absolute;
+  left: 30%;
+  top: 150px;
+  z-index: 3;
+  transform: rotate(5deg);
+}
+
+.polaroid:nth-child(3) {
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  z-index: 2;
+  transform: rotate(35deg);
+}
+.polaroid:hover {
+  transform: rotate(0deg);
+  z-index: 10;
+  box-shadow: 2px 20px 24px rgba(0, 0, 0, .5);
 }
